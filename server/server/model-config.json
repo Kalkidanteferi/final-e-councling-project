@@ -1,0 +1,126 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../node_modules/loopback-ds-timestamp-mixin",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mymongo",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "mymongo",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mymongo",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mymongo",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mymongo",
+    "public": false
+  },
+  "counselling-content": {
+    "dataSource": "mymongo",
+    "public": true
+  },
+  "expert": {
+    "dataSource": "mymongo",
+    "public": true
+  },
+  "user_account": {
+    "dataSource": "mymongo",
+    "public": true
+  },
+  "blog": {
+    "dataSource": "mymongo",
+    "public": true
+  },
+  "comment": {
+    "dataSource": "mymongo",
+    "public": true
+  },
+  "rate": {
+    "dataSource": "mymongo",
+    "public": true
+  },
+  "service": {
+    "dataSource": "mymongo",
+    "public": true
+  },
+  "request": {
+    "dataSource": "mymongo",
+    "public": true
+  },
+  "message": {
+    "dataSource": "mymongo",
+    "public": true
+  },
+  "conversation": {
+    "dataSource": "mymongo",
+    "public": true
+  },
+  "admin": {
+    "dataSource": "mymongo",
+    "public": true
+  },
+  "container": {
+    "dataSource": "storage",
+    "public": true
+  },
+  "user": {
+    "dataSource": "mymongo",
+    "public": true,
+    "acls": [
+      {
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW",
+        "property": "signin"
+      },
+      {
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW",
+        "property": "expertRegister"
+      },
+      {
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW",
+        "property": "userRegister"
+      },
+      {
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW",
+        "property": "getUser"
+      }
+    ]
+  },
+  "forum": {
+    "dataSource": "mymongo",
+    "public": true
+  },
+  "reply": {
+    "dataSource": "mymongo",
+    "public": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory",
+    "file": "testdata.json"
+  },
+  "mymongo": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "e-council",
+    "name": "mymongo",
+    "connector": "mongodb"
+  },
+  "storage": {
+    "name": "storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./server/storage",
+    "nameConflict": "makeUnique"
+  }
+}

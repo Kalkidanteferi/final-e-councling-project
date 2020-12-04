@@ -1,0 +1,18 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 2,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {
+      "4r8d06XPYWbmXoFpv0RyS84Nw8EPXb2OGgnYAxEYH4F7yuxeiT8tdiC9yhqFqCTF": "{\"id\":\"4r8d06XPYWbmXoFpv0RyS84Nw8EPXb2OGgnYAxEYH4F7yuxeiT8tdiC9yhqFqCTF\",\"ttl\":1209600,\"created\":\"2020-05-25T15:15:33.264Z\",\"userId\":\"5ecbdef17fad7001872ceb0a\"}"
+    },
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {}
+  }
+}

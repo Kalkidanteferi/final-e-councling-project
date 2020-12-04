@@ -1,0 +1,39 @@
+{
+  "name": "forum",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "TimeStamp": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "reply_count": {
+      "type": "number",
+      "default": 0
+    },
+    "show": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "replies": {
+      "type": "hasMany",
+      "model": "reply",
+      "foreignKey": "forum_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

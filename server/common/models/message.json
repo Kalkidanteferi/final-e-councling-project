@@ -1,0 +1,32 @@
+{
+  "name": "message",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "TimeStamp": true
+  },
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "from": {
+      "type": "string"
+    },
+    "to": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "msg_conv": {
+      "type": "hasMany",
+      "model": "conversation",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

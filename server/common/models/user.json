@@ -1,0 +1,48 @@
+{
+  "name": "user",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "role": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "experts": {
+      "type": "hasMany",
+      "model": "expert",
+      "foreignKey": "user_id"
+    },
+    "userAccounts": {
+      "type": "hasMany",
+      "model": "user_account",
+      "foreignKey": "user_id"
+    },
+    "replies": {
+      "type": "hasMany",
+      "model": "reply",
+      "foreignKey": "user_id"
+    },
+    "forums": {
+      "type": "hasMany",
+      "model": "forum",
+      "foreignKey": "user_id"
+    },
+    "blogs": {
+      "type": "hasMany",
+      "model": "blog",
+      "foreignKey": "user_id"
+    },
+    "counselling-contents": {
+      "type": "hasMany",
+      "model": "counselling-content",
+      "foreignKey": "user_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

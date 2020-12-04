@@ -1,0 +1,26 @@
+[
+	{
+  	  "id":1,
+  	  "serviceProviderId":1
+	},
+	{
+  	  "id":2,
+  	  "serviceProviderId":1
+	},
+	{
+  	  "id":3,
+  	  "serviceProviderId":1
+	},
+	{
+  	  "id":4,
+  	  "serviceProviderId":2
+	},
+	{
+  	  "id":5,
+  	  "serviceProviderId":2
+	},
+	{
+  	  "id":6,
+  	  "serviceProviderId":2
+	}
+]
